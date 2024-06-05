@@ -4,8 +4,8 @@
 start_date="2024-05-30"
 current_date=$start_date
 
-# Loop for 130 days
-for (( i=1; i<=135; i++ )); do
+# Loop for 200 days
+for (( i=1; i<=200; i++ )); do
     # Determine if it's a commit day or not (60% chance of a commit)
     commit_day=$((RANDOM % 10))
     if [ $commit_day -lt 4 ]; then
