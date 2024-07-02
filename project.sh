@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Start date
-start_date="2024-05-30"
+start_date="2024-06-30"
 current_date=$start_date
 
-# Loop for 200 days
+# Loop for 150 days
 for (( i=1; i<=200; i++ )); do
     # Determine if it's a commit day or not (60% chance of a commit)
     commit_day=$((RANDOM % 10))
