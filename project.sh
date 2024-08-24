@@ -8,11 +8,11 @@ current_date=$start_date
 for (( i=1; i<=152; i++ )); do
     # Determine if it's a commit day or not (60% chance of a commit)
     commit_day=$((RANDOM % 10))
-    if [ $commit_day -lt 4 ]; then
+    if [ $commit_day -lt 2 ]; then
         # Determine the number of commits for this day
         num_commits=1
         if [ $((RANDOM % 5)) -eq 0 ]; then
-            num_commits=$((RANDOM % 3 + 2))  # Make 2 or 3 commits
+            num_commits=$((RANDOM % 4 + 3))  # Make 2 or 3 commits
         fi
 
         # Loop to make multiple commits
